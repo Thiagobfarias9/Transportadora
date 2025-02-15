@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes Desaparecer{
+    0%{
+        filter: opacity(1);
+    }
+    100%{
+        filter: opacity(0);
+    }
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    height: fit-content;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+form > input{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px gainsboro solid;
+}
+
+form > button{
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    background-color: #A9B5DF;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
