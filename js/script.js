@@ -105,19 +105,18 @@ function CriarTextoAviso(text)
     p.style.animationName = "Desaparecer"
     p.style.animationDelay = "3.5s"
     p.style.animationDuration = "1s"
-    body.appendChild(p)
     setTimeout( function(){
         body.removeChild(p)
     },4000
     )
 
-    // if(!document.querySelector("TextAviso"))
-    // {
-        
-    // }
-    // else{
-    //     body.replaceChild(p,document.querySelector("TextAviso"))
-    // }
+    if(!document.getElementById('TextAviso'))
+    {
+        body.appendChild(p)
+    }
+    else{
+        body.replaceChild(p,document.getElementById('TextAviso'))
+    }
 
 
     
